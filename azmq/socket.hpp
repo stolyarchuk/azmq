@@ -677,7 +677,7 @@ public:
     }
 
     boost::system::error_code close_monitor(boost::system::error_code & ec) {
-        return get_service().close_monitor(implementation, ec);
+        return get_service().close_monitor(get_implementation(), ec);
     }
 
     void close_monitor() {
